@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
 :root {
-  --wheel-font: 'Lato', 'Quicksand', sans-serif;
-  --wheel-size: 400px;
+  --wheel-font: 'Luckiest Guy', cursive;
+  --wheel-size: 650px;
   --wheel-slice-spacing: 50px;
-  --wheel-border-size: 5px;
+  --wheel-border-size: 20px;
   --wheel-color: #da3768;
   --neutral-color: white;
   --PI: 3.14159265358979;

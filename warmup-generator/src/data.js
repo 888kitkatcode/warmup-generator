@@ -135,7 +135,7 @@ const warmupsData = [
     language: 'Try solving in JavaScript first!',
   },
   {
-    heading: 'AJAX request to get Simpsons quote',
+    heading: 'AJAX request',
     instructions: 'https://gist.github.com/kasun-maldeni/e728273ff2c20c857ad7901a135a20c8', 
     time: 'Estimated time to solve: less than 30 minutes',
     language: '',
