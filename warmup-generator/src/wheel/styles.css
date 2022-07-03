@@ -2,9 +2,9 @@
 
 :root {
   --wheel-font: 'Luckiest Guy', cursive;
-  --wheel-size: 650px;
-  --wheel-slice-spacing: 50px;
-  --wheel-border-size: 20px;
+  --wheel-size: 700px;
+  --wheel-slice-spacing: 30px;
+  --wheel-border-size: 10px;
   --wheel-color: #da3768;
   --neutral-color: white;
   --PI: 3.14159265358979;
@@ -26,7 +26,7 @@
   padding: 3px;
   margin: auto;
   background-color: var(--neutral-color);
-  border: solid var(--wheel-color) 3px;
+  border: solid var(--wheel-color) 10px;
   border-radius: 50%;
   user-select: none;
 }
@@ -82,15 +82,21 @@
 .wheel::after {
   display: block;
   position: absolute;
-  content: '';
+  content: 'SPIN';
   background-color: var(--neutral-color);
-  width: 25px;
-  height: 25px;
+  width: 150px;
+  height: 150px;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Element sur la roue */

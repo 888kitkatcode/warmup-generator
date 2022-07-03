@@ -24,13 +24,20 @@ export default class FortuneWheel extends React.Component {
     }
   }
 
+  getColor() {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    return `rgba(${r},${g},${b},0.7)`;
+  }
+
   render() {
     const { selectedItem } = this.state;
     const { items } = this.props;
 
     const wheelVars = {
       '--nb-item': items.length,
-      '--selected-item': selectedItem,
+      '--selected-item': selectedItem
     };
     const spinning = selectedItem !== null ? 'spinning' : '';
 
@@ -38,7 +45,7 @@ export default class FortuneWheel extends React.Component {
       <div className="wheel-container">
         <div className={`wheel ${spinning}`} style={wheelVars} onClick={this.selectItem}>
           {items.map((item, index) => (
-            <div className="wheel-item" key={index} style={{ '--item-nb': index }}>
+            <div className="wheel-item" key={index} style={{ '--item-nb': index,background:`${this.getColor()}`,height:'3%'}}>
               {item}
             </div>
           ))}
