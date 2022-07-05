@@ -26,7 +26,7 @@ export default class FortuneWheel extends React.Component {
     } else {
       this.state.visibility = 'hidden'
       this.setState({ selectedItem: null });
-      setTimeout(this.setVisibility, 4700) 
+      setTimeout(this.setVisibility, 5000) 
     } 
     
   }
