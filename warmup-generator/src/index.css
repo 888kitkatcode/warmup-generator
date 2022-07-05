@@ -5,7 +5,7 @@ h1 {
   margin-top: 60px;
   font-size: 100px;
   background-image: url(https://i.pinimg.com/originals/e6/f8/0b/e6f80be8122d7019c37b39b02dd6ec2c.gif);
-  background-size: cover;
+  background-size: 100%;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -19,7 +19,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('https://c.tenor.com/NxESS-trmRQAAAAd/wheel-of-fortune-wheel.gif');
-  /* background-image: url('https://thumbs.gfycat.com/CleanCelebratedClingfish-max-1mb.gif'); */
   background-size: 100%;
   color: plum;
 }
@@ -39,31 +38,42 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-  /* border: rgb(252, 193, 244) solid 20px; */
   border: 10px solid transparent;
   border-image: url(https://c.tenor.com/RswRbuJdlxoAAAAC/heaven-angel.gif) 5%;
-  /* border-radius: 60px; */
   text-align: center;
   margin: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.display:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%{
+      box-shadow:
+      0 0 100px #5ddcff,
+      0 0 400px #4e00c2;
+      opacity: 2;
+  }
 }
 
 .Warmup-heading {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bold;
+  text-decoration: none;
   background-image: url(https://scitechdaily.com/images/Silver-Liquid.gif);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: -3px -3px 3px whitesmoke;
+  text-shadow: -2px 4px 0px white;
   padding: 0;
   margin: 0;
   top:50%;
+}
+
+.Warmup-heading:hover {
+  text-shadow: -2px 4px 3px white;
 }
 
 .Warmup-time {
@@ -89,4 +99,91 @@ code {
   padding: 0;
   margin: 0;
   top:50%;
+}
+
+@media only screen and (max-width: 390px) {  
+  body {
+    background-size: 50%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .Warmup {
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  :root {
+    --wheel-size: 300px;
+  }
+
+  .wheel::after {
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+  }
+
+  .display {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Warmup-time {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .Warmup-language {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-size: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .Warmup {
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  :root {
+    --wheel-size: 700px;
+  }
+
+  .wheel::after {
+    width: 150px;
+    height: 150px;
+    font-size: 45px;
+  }
+
+  .display {
+    width: 400px;
+    height: 400px;
+  }
+
+  .Warmup-heading {
+    font-size: 60px;
+  }
+
+  .Warmup-time {
+    font-size: 30px;
+  }
+
+  .time {
+    font-size: 30px;
+  }
+
+  .Warmup-language {
+    font-size: 30px;
+  }
 }

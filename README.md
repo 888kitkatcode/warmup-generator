@@ -5,5 +5,7 @@ When user accesses the website, they will see a button to spin the wheel (consid
 <li>Name of warm up</li>
 <li>Instructions for warm up</li>
 <li>Language to solve it in first</li>
-<h2>Future feature</h2>
+<h2>Future features</h2>
+<li>Replace hyperlinks to warm ups with full text of warm ups</li>
 <li>Example solution for each warm up (which will be hidden until you press a button to unhide)</li>
+<li>Include timer API that user can use for each warm up</li>

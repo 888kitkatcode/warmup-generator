@@ -2,7 +2,7 @@
 
 :root {
   --wheel-font: 'Luckiest Guy', cursive;
-  --wheel-size: 680px;
+  --wheel-size: 700px;
   --wheel-slice-spacing: 30px;
   --wheel-border-size: 10px;
   --wheel-color: #da3768;
@@ -98,6 +98,7 @@
   display: block;
   position: absolute;
   box-sizing: border-box;
+  font-size: 20px;
 
   top: 50%;
   left: 50%;
